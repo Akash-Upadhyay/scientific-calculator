@@ -8,5 +8,7 @@ WORKDIR /app
 COPY target/scientific-calculator-1.0-SNAPSHOT.jar /app/scientific-calculator.jar
 
 # Set the entry point to run the JAR file
-ENTRYPOINT ["java", "-jar", "/app/scientific-calculator.jar"]
+# ENTRYPOINT ["java", "-jar", "/app/scientific-calculator.jar"]
+
+CMD ["java", "-jar", "/app/scientific-calculator.jar"]
 
