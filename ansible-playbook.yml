@@ -14,6 +14,5 @@
       command: docker rm calculator_container
       ignore_errors: yes
 
-    - name: Run new container
-      command: docker run -d --name calculator_container mt2024013/scientific-calculator
-
+    - name: Run new container in background
+      command: docker run -dit --name calculator_container --restart unless-stopped mt2024013/scientific-calculator
