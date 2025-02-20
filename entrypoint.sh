@@ -5,7 +5,7 @@ echo "1. Square Root (√x)"
 echo "2. Factorial (x!)"
 echo "3. Natural Log (ln(x))"
 echo "4. Power Function (x^b)"
-echo "5. Exit"
+echo "5. Exit\n"
 java -jar /app/scientific-calculator.jar
 
 
