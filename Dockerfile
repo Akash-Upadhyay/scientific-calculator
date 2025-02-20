@@ -10,5 +10,7 @@ COPY target/scientific-calculator-1.0-SNAPSHOT.jar /app/scientific-calculator.ja
 # Set the entry point to run the JAR file
 # ENTRYPOINT ["java", "-jar", "/app/scientific-calculator.jar"]
 
-CMD ["java", "-jar", "/app/scientific-calculator.jar"]
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+CMD ["/entrypoint.sh"]
 
