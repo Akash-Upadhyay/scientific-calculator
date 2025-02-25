@@ -29,7 +29,9 @@ public class ScientificCalculator {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        char ch = scanner.next().charAt(0);
         while (true) {
+
             System.out.println("\nScientific Calculator");
             System.out.println("1. Square Root (√x)");
             System.out.println("2. Factorial (x!)");
