@@ -27,6 +27,10 @@ public class ScientificCalculator {
         return Math.pow(x, b);
     }
 
+    public static double add(double x, double y) {
+        return x + y;
+    }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         scanner.nextLine();
@@ -37,7 +41,8 @@ public class ScientificCalculator {
             System.out.println("2. Factorial (x!)");
             System.out.println("3. Natural Log (ln(x))");
             System.out.println("4. Power Function (x^b)");
-            System.out.println("5. Exit");
+            System.out.println("5. Addition (x + y)");
+            System.out.println("6. Exit");
 
             System.out.print("Enter your choice: ");
             int choice = scanner.nextInt();
@@ -61,6 +66,12 @@ public class ScientificCalculator {
                 double b = scanner.nextDouble();
                 System.out.println("Result: " + power(x, b));
             } else if (choice == 5) {
+                System.out.print("Enter first number (x): ");
+                double x = scanner.nextDouble();
+                System.out.print("Enter second number (y): ");
+                double y = scanner.nextDouble();
+                System.out.println("Result: " + add(x, y));
+            } else if (choice == 6) {
                 break;
             } else {
                 System.out.println("Invalid choice! Try again.");
