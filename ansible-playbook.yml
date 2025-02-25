@@ -15,4 +15,4 @@
       ignore_errors: yes
 
     - name: Run new container in background
-      command: docker run -dit --name calculator_container --restart unless-stopped mt2024013/scientific-calculator
+      command: docker run -d -it --name calculator_container mt2024013/scientific-calculator
