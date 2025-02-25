@@ -29,7 +29,7 @@ public class ScientificCalculator {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        char ch = scanner.next().charAt(0);
+        char ch = scanner.nextLine();
         while (true) {
 
             System.out.println("\nScientific Calculator");
